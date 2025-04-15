@@ -9,6 +9,8 @@ import Freelancers from "./pages/Freelancer";
 import AdminCorrect from "./pages/AdminCorrect";
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import AuthCallbackHandler from "./pages/AuthCallbackHandler";
+
 
 import './App.css';
 
@@ -34,6 +36,8 @@ function App() {
           <Route path="/Client" element={<Client />} />
           <Route path="/Freelancer" element={<Freelancers />} />
           <Route path="/Admin" element={<AdminCorrect />} />
+          <Route path="/auth/callback" element={<AuthCallbackHandler />} />
+
         </Routes>
       </section>
       
